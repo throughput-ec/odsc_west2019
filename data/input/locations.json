@@ -1,0 +1,316 @@
+{
+  "nodes": [
+    {
+      "id": "schema.org",
+      "type": "schema",
+      "group": 1
+    },
+    {
+      "id": "Person",
+      "type": "vocabulary",
+      "group": 2
+    },
+    {
+      "id": "familyName",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "givenName",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "hasOccupation",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "affiliation",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "neotoma.org",
+      "type": "database",
+      "group": 1
+    },
+    {
+      "id": "contacts",
+      "type": "table",
+      "group": 2
+    },
+    {
+      "id": "publicationauthors",
+      "type": "table",
+      "group": 2
+    },
+    {
+      "id": "publicationtranslators",
+      "type": "table",
+      "group": 2
+    },
+    {
+      "id": "publicationeditors",
+      "type": "table",
+      "group": 2
+    },
+    {
+      "id": "familyname",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "givennames",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "initials",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "contactname",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "title",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "address",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "PaleoFire",
+      "type": "database",
+      "group": 1
+    },
+    {
+      "id": "CONTACT",
+      "type": "table",
+      "group": 2
+    },
+    {
+      "id": "FIRSTNAME",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "LASTNAME",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "AFFILIATION",
+      "type": "property",
+      "group": 3
+    },
+    {
+      "id": "DublinCore",
+      "type": "schema",
+      "group": 1
+    },
+    {
+      "id": "creator",
+      "type": "property",
+      "group": 3
+    }
+  ],
+  "links": [
+    {
+      "source": "schema.org",
+      "target": "Person",
+      "value": 1
+    },
+    {
+      "source": "Person",
+      "target": "familyName",
+      "value": 1
+    },
+    {
+      "source": "Person",
+      "target": "givenName",
+      "value": 1
+    },
+    {
+      "source": "Person",
+      "target": "hasOccupation",
+      "value": 1
+    },
+    {
+      "source": "Person",
+      "target": "affiliation",
+      "value": 1
+    },
+    {
+      "source": "neotoma.org",
+      "target": "contacts",
+      "value": 1
+    },
+    {
+      "source": "neotoma.org",
+      "target": "publicationauthors",
+      "value": 1
+    },
+    {
+      "source": "neotoma.org",
+      "target": "publicationeditors",
+      "value": 1
+    },
+    {
+      "source": "neotoma.org",
+      "target": "publicationtranslators",
+      "value": 1
+    },
+    {
+      "source": "neotoma.org",
+      "target": "contacts",
+      "value": 1
+    },
+    {
+      "source": "contacts",
+      "target": "contactname",
+      "value": 1
+    },
+    {
+      "source": "contacts",
+      "target": "familyname",
+      "value": 1
+    },
+    {
+      "source": "contacts",
+      "target": "givennames",
+      "value": 1
+    },
+    {
+      "source": "contacts",
+      "target": "title",
+      "value": 1
+    },
+    {
+      "source": "contacts",
+      "target": "address",
+      "value": 1
+    },
+    {
+      "source": "publicationauthors",
+      "target": "familyname",
+      "value": 1
+    },
+    {
+      "source": "publicationeditors",
+      "target": "familyname",
+      "value": 1
+    },
+    {
+      "source": "publicationtranslators",
+      "target": "familyname",
+      "value": 1
+    },
+    {
+      "source": "publicationauthors",
+      "target": "initials",
+      "value": 1
+    },
+    {
+      "source": "publicationeditors",
+      "target": "initials",
+      "value": 1
+    },
+    {
+      "source": "publicationtranslators",
+      "target": "initials",
+      "value": 1
+    },
+    {
+      "source": "DublinCore",
+      "target": "creator",
+      "value": 1
+    },
+    {
+      "source": "PaleoFire",
+      "target": "CONTACT",
+      "value": 1
+    },
+    {
+      "source": "CONTACT",
+      "target": "AFFILIATION",
+      "value": 1
+    },
+    {
+      "source": "CONTACT",
+      "target": "FIRSTNAME",
+      "value": 1
+    },
+    {
+      "source": "CONTACT",
+      "target": "LASTNAME",
+      "value": 1
+    },
+    {
+      "source": "contactname",
+      "target": "creator",
+      "value": 2,
+      "transform": "equivalent"
+    },
+    {
+      "source": "familyname",
+      "target": "familyName",
+      "value": 2,
+      "transform": "equivalent"
+    },
+    {
+      "source": "familyname",
+      "target": "LASTNAME",
+      "value": 2,
+      "transform": "equivalent"
+    },
+    {
+      "source": "familyName",
+      "target": "LASTNAME",
+      "value": 2,
+      "transform": "equivalent"
+    },
+    {
+      "source": "givennames",
+      "target": "givenName",
+      "value": 2,
+      "transform": "split/concatenate"
+    },
+    {
+      "source": "givennames",
+      "target": "FIRSTNAME",
+      "value": 2,
+      "transform": "split/concatenate"
+    },
+    {
+      "source": "initials",
+      "target": "FIRSTNAME",
+      "value": 2,
+      "transform": "regular expression"
+    },
+    {
+      "source": "hasOccupation",
+      "target": "title",
+      "value": 2,
+      "transform": "equivalent"
+    },
+    {
+      "source": "affiliation",
+      "target": "AFFILIATION",
+      "value": 2,
+      "transform": "equivalent"
+    },
+    {
+      "source": "affiliation",
+      "target": "address",
+      "value": 2,
+      "transform": "regular expression"
+    }
+  ]
+}

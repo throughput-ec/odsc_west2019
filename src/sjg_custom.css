@@ -1,0 +1,404 @@
+/**
+ * SGoring modified theme from
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+/**
+Colors:
+Crimson: #d01513
+Chocolate: #d54a1c
+Burly Wood: #e5c4ad
+Dark Gray: #999990
+Gray: #847e79
+**/
+
+:root {
+  --main-bg-color: #e5c4ad;
+  --main-heading-color: #d01513;
+  --main-text-color: #616161;
+  --shadow-col: rgba(0, 0, 0, 0.2)
+}
+
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
+  color: #222; }
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: var(--main-gb-color);
+  background-color: var(--main-gb-color); }
+
+.reveal {
+  font-family: "EB Garamond";
+  font-size: 42px;
+  font-weight: normal;
+  color: var(--main-text-color); }
+
+
+::selection {
+  color: #fff;
+  background: #bee4fd;
+  text-shadow: none; }
+
+::-moz-selection {
+  color: #fff;
+  background: #bee4fd;
+  text-shadow: none; }
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit; }
+
+.reveal .reveal_section {
+    position: relative;
+}
+.reveal .caption {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: var(--main-heading-color);
+  font-family: "EB Garamond", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-shadow: none;
+  word-wrap: break-word; }
+
+.reveal h1 {
+  font-size: 1.5em; }
+
+.reveal h2 {
+  font-size: 1.3em; }
+
+.reveal h3 {
+  font-size: 1em; }
+
+.reveal h4 {
+  font-size: .8em; }
+
+.reveal h1 {
+  text-shadow: 0 3px 3px var(--shadow-col); }
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal p {
+  font-family: "EB Garamond";
+  font-size: 42px;
+  font-weight: normal;
+  color: #821308;
+  margin: 20px 0;
+  line-height: 1.3; }
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%;
+  opacity: 0.9;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: bold; }
+
+.reveal em {
+  font-style: italic; }
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em; }
+
+.reveal ol {
+  list-style-type: decimal; }
+
+.reveal ul {
+  list-style-type: disc; }
+
+.reveal ul ul {
+  list-style-type: square; }
+
+.reveal ul ul ul {
+  list-style-type: circle; }
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px; }
+
+.reveal dt {
+  font-weight: bold; }
+
+.reveal dd {
+  margin-left: 40px; }
+
+.reveal q,
+.reveal blockquote {
+  quotes: none; }
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block; }
+
+.reveal q {
+  font-style: italic; }
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+
+.reveal code {
+  font-family: monospace; }
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal; }
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.reveal table th {
+  font-weight: bold; }
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid; }
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center; }
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right; }
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none; }
+
+.reveal sup {
+  vertical-align: super; }
+
+.reveal sub {
+  vertical-align: sub; }
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top; }
+
+.reveal small * {
+  vertical-align: top; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: #42affa;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:hover {
+  color: #8dcffc;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #068de9; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+
+.reveal section img { background:none; border:none; box-shadow:none; }
+
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none; }
+
+.reveal a img {
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #42affa;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: #42affa; }
+
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: #42affa; }
+
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: #42affa; }
+
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: #42affa; }
+
+.reveal .controls .navigate-left.enabled:hover {
+  border-right-color: #8dcffc; }
+
+.reveal .controls .navigate-right.enabled:hover {
+  border-left-color: #8dcffc; }
+
+.reveal .controls .navigate-up.enabled:hover {
+  border-bottom-color: #8dcffc; }
+
+.reveal .controls .navigate-down.enabled:hover {
+  border-top-color: #8dcffc; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #42affa;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+img .logos {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+circle {
+  fill: #9fdbd1;
+  fill-opacity: .5;
+  stroke: #fff;
+  stroke-opacity: 0.8;
+  stroke-width: 1px;
+}
+
+.leaf circle {
+  fill: #ffC038;
+  fill-opacity: 1;
+}
+
+text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+#left {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:50%;
+  z-index:-10;
+}
+
+#right {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: right;
+  z-index:-10;
+  width:50%;
+}
+
+.reveal figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 20px; /* adjust as needed */
+}
+
+.reveal figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
+
+/********************************************************
+*   CUSTOM ELEMENTS
+********************************************************/
+
+.boxer {
+  background-color:rgba(255,255,255,0.9);
+  padding: 30px;
+  border-style: solid;
+}
+
+p.hangingindent {
+  margin-left: 1cm;
+  text-indent: -0.5cm;
+  font-family: "EB Garamond";
+  font-size: 24px;
+  text-align: left;}
+
+/********************************************************
+*  d3 ELEMENTS
+********************************************************/
+
+.links line {
+  stroke-opacity: 0.6;
+  filter: drop-shadow( 3px 3px 2px rgba(0,0,0,0.3) );
+}
+.nodes circle {
+  stroke: rgba(255,255,255,0.6);
+  stroke-width: 1.5px;
+  filter: drop-shadow( 3px 3px 2px rgba(0,0,0,0.3) );
+}
